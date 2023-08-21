@@ -5,7 +5,10 @@
 ![](https://github.com/tsudalab/Polymer-degradability-ranking/blob/main/ranking_result.png)   
 
 ## Data  
-The experimental data of polymer degradability and literature data can be found in /Data 
+The experimental data of polymer degradability and literature data can be found in /Data  
+
+The predicted degradability of PolyInfo data in model applicability domain can be found in (https://github.com/tsudalab/Polymer-degradability-ranking/blob/main/degradabilty_result_of_polyinfo.csv). The detailed information about polymers can be tracked through PID in (https://polymer.nims.go.jp/)  
+
 ## Model  
 The model for degradability ranking can be found in /Model. 
 ## Applicability Domain determination of Polyinfo data  
