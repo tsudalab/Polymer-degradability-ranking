@@ -22,6 +22,14 @@ The model for degradability ranking can be found in /Model.
 
 ## Usage
 
+### Getting the Code
+
+Clone the repository using the following command:
+
+```bash
+git clone https://github.com/tsudalab/Polymer-degradability-ranking.git
+```
+
 ### Loading Datasets  
 The script is designed to work with following Excel files containing molecular information:
 
