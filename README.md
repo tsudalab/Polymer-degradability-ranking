@@ -13,11 +13,12 @@ The predicted degradability of PolyInfo data in model applicability domain can b
 The model for degradability ranking can be found in /Model. 
 
 ## Requirement
-**Python**
-**Mol2vec** (https://github.com/samoturk/mol2vec)  
-** Gensim** (https://radimrehurek.com/gensim/)  
-** Scikit-learn **
-** RDKit  **
+- **Python**
+- **[Mol2vec](https://github.com/samoturk/mol2vec)**
+- **[Gensim](https://radimrehurek.com/gensim/)**
+- **Scikit-learn**
+- **RDKit**
+
 
 ## Usage
 
