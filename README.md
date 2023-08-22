@@ -17,7 +17,7 @@ The model for degradability ranking can be found in /Model.
 ** Mol2vec (https://github.com/samoturk/mol2vec)  
 ** Gensim (https://radimrehurek.com/gensim/)  
 ** Scikit-learn 
-** RDKit
+** RDKit  
 
 ## Usage
 
