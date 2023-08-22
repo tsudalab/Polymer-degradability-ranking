@@ -133,7 +133,7 @@ y_labeled = np.concatenate([y_labeled_lit, y_labeled_exp1 ,y_labeled_exp2])
 
 model_degradability = svm.LinearSVC(C=0.007,dual=False, max_iter=10000)
 model_degradability.fit(x_labeled, y_labeled)
-
+x_all = mol2vec(mols_lit+mols_exp1+mols_exp2)
 y_pred =np.dot(x_all, model_degradability.coef_.ravel())
 y_pred_s = autoscale(y_pred)
 names = df_lit['Name'].tolist()+df_exp1['Name'].tolist()+df_exp2['Name'].tolist()
