@@ -90,14 +90,14 @@ python main.py predict 'SMILES' 'SMILES'... -sp
 - **'SMILES'...** is a list of SMILES strings.
 - **-sp:** Specifies the default prediction for comparing the given SMILES.
 
-### Usage for Comparing a Specific Polymer's Rank Within Training Data:  
+### Comparing a Specific Polymer's Rank Within Training Data:  
 ```python
 python main.py predict 'SMILES' -c
 ```
 - **'SMILES'...** The specific SMILES string to be ranked.
 - **-c:** Compares the given SMILES with default data.
 
-Additional Options:
+#### Additional Options:
 - **'--model'...** Specifies the model file. The default value is "deg_model.pickle".  
 
 Note: At least two SMILES strings are required when using using the -sp option。  
