@@ -24,7 +24,7 @@ The model for degradability ranking can be found in /Model.
 ## Requirement
 - **Python**
 - **[Mol2vec](https://github.com/samoturk/mol2vec)**
-- **[Gensim](https://radimrehurek.com/gensim/)**
+- **[Gensim](https://radimrehurek.com/gensim/)** (pip install gensim==3.8.3)
 - **Scikit-learn**
 - **RDKit**
 
