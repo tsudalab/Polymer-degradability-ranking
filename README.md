@@ -30,7 +30,7 @@ x_labeled_exp1, y_labeled_exp1 = transform_pairwise(mol2vec(mols_exp1), deg_exp1
 x_labeled_exp2, y_labeled_exp2 = transform_pairwise(mol2vec(mols_exp2), deg_exp2)
 
 x_labeled = np.concatenate([x_labeled_lit, x_labeled_exp1, x_labeled_exp2])
-y_labeled = np.concatenate([y_labeled_lit, y_labeled_exp1 ,y_labeled_exp2])```
+y_labeled = np.concatenate([y_labeled_lit, y_labeled_exp1 ,y_labeled_exp2])
 ```
 ### Model Training and Prediction  
 SVM is used to train the degradability model. The hyperparameter is optimized using grid search.
