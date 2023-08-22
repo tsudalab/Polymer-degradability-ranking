@@ -71,7 +71,15 @@ python main.py train newdata
 A trained model will be saved as Model/update_model.pickle, and a notification of the training completion will be printed in the terminal.  
 
 ## Predict degradability of given polymer
+The `main.py` allows to predict the degradability of given polymer SMILES. There are two main commands to achieve different tasks:  
+The "predict" command allows users to make predictions using the model. This command has additional options to specify the type of prediction and the model to use.  
+Usage for Comparing Given Polymers:  
 
+```python
+python main.py predict 'SMILES' 'SMILES'... -sp
+```
+- **'SMILES'...** is a list of SMILES strings.
+- **-sp:** Specifies the default prediction for comparing the given SMILES.
 
 ## Applicability Domain determination of Polyinfo data  
 The code for Applicability Domain determination can be found in (https://github.com/onecoinbuybus/KNN-Applicability-Domain/tree/main) 
