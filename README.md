@@ -71,6 +71,7 @@ Decision tree analysis of the ranking result using molecular descriptors is prov
 
 ## Update the model  
 The `train` method allows you to train update ranking model using new degradability data files containing polymer smiles.  
+  
 After place Excel files (.xlsx) in the 'Data' directory, each containing two required columns: SMILES and Degradability values.  
 Then Run the following command in your terminal to start the training process:  
 
