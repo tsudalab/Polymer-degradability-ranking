@@ -9,10 +9,10 @@
 The experimental data of polymer degradability can be found in two files:
 - 'Data/exp1.xlsx'
 - 'Data/exp2.xlsx'
-
+  
 And the literature data can be found in:
 - 'Data/literature.xlsx'
-
+  
 
 ### Predicted Degradability of PolyInfo Data
 The predicted degradability of PolyInfo data in model applicability domain can be found in [this CSV file on GitHub](https://github.com/tsudalab/Polymer-degradability-ranking/blob/main/degradabilty_result_of_polyinfo.csv). The detailed information about polymers can be tracked through PID in [Polymer Database](https://polymer.nims.go.jp/).
