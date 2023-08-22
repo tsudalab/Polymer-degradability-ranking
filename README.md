@@ -28,10 +28,16 @@ Clone the repository using the following command:
 
 ```bash
 git clone https://github.com/tsudalab/Polymer-degradability-ranking.git
+cd Polymer-degradability-ranking
+```
+## How to Run  
+Execute the script by running. 
+```bash
+python degradability_ranking.py
 ```
 
 ### Loading Datasets  
-The script is designed to work with following Excel files containing molecular information:
+Following Excel files containing molecular information will be loaded:
 
     'Data/literature.xlsx'
     'Data/exp1.xlsx'
@@ -48,20 +54,24 @@ x_labeled_exp2, y_labeled_exp2 = transform_pairwise(mol2vec(mols_exp2), deg_exp2
 x_labeled = np.concatenate([x_labeled_lit, x_labeled_exp1, x_labeled_exp2])
 y_labeled = np.concatenate([y_labeled_lit, y_labeled_exp1 ,y_labeled_exp2])
 ```
-### Model Training and Prediction  
-SVM is used to train the degradability model. The hyperparameter is optimized using grid search. The trained ranking model then applied to create unified ranking
+### Model Training and Creation of unified ranking  
+SVM is used to train the degradability model. The hyperparameter is optimized using grid search. When the model completes training, the script will automatically print out a unified ranking and degradation score.
 
 ### Decision Tree Analysis  
 Decision tree analysis of the ranking result using molecular descriptors is provided at the end of the script.
 
-### Advanced Usage
+## Update the model  
+The `train` method allows you to train update ranking model using new degradability data files containing polymer smiles.  
+After place Excel files (.xlsx) in the 'Data' directory, each containing two required columns: SMILES and Degradability values.  
+Then Run the following command in your terminal to start the training process:  
 
-
-## How to Run  
-Execute the script by running
 ```bash
-python degradability_ranking.py
+python main.py train newdata
 ```
+A trained model will be saved as Model/update_model.pickle, and a notification of the training completion will be printed in the terminal.  
+
+## Predict degradability of given polymer
+
 
 ## Applicability Domain determination of Polyinfo data  
 The code for Applicability Domain determination can be found in (https://github.com/onecoinbuybus/KNN-Applicability-Domain/tree/main) 
