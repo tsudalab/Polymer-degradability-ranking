@@ -216,7 +216,6 @@ class degradability_ranking:
                     {"smiles": smile, "rank": rank, "score": score}
                 )
 
-            print(result_dict)
         elif track == "c":
             df_lit = pd.read_excel("Data/literature.xlsx")
             df_exp1 = pd.read_excel("Data/exp1.xlsx")
