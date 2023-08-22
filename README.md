@@ -33,7 +33,7 @@ x_labeled = np.concatenate([x_labeled_lit, x_labeled_exp1, x_labeled_exp2])
 y_labeled = np.concatenate([y_labeled_lit, y_labeled_exp1 ,y_labeled_exp2])
 ```
 ### Model Training and Prediction  
-SVM is used to train the degradability model. The hyperparameter is optimized using grid search.
+SVM is used to train the degradability model. The hyperparameter is optimized using grid search. The trained ranking model then applied to create unified ranking
 
 ### Decision Tree Analysis  
 Decision tree analysis of the ranking result using molecular descriptors is provided at the end of the script.
